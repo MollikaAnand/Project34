@@ -2,6 +2,8 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
+const Mouse = Matter.Mouse;
+const MouseConstraint = Matter.MouseConstraint;
 
 function setup() {
     
