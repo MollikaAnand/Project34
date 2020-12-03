@@ -13,7 +13,7 @@ function setup() {
     canvasmouse.pixelRatio = pixelDensity();
     let options = {
         
-     mouse: canvasmouse;
+     mouse: canvasmouse
         
     }
     
