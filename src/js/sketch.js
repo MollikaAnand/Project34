@@ -8,7 +8,18 @@ function setup() {
     createCanvas(windowWidth/2,windowHeight/2);
     engine = Engine.create();
     world = engine.world;
-
+    
+    let canvasmouse = Mouse.create(canvas.elt);
+    canvasmouse.pixelRatio = pixelDensity();
+    let options = {
+        
+     mouse: canvasmouse;
+        
+    }
+    
+    mConstraint = MouseConstraint.create(engine,options);
+    World.add(world,mConstraint);
+    
     bob1 = new Pendulum(windowWidth/2-190,windowHeight/2-800);
     bob2 = new Pendulum(windowWidth/2-270,windowHeight/2-800);
     bob3 = new Pendulum(windowWidth/2-360,windowHeight/2-800);
