@@ -22,11 +22,11 @@ function setup() {
     mConstraint = MouseConstraint.create(engine,options);
     World.add(world,mConstraint);
     
-    bob1 = new Pendulum(windowWidth/2-190,windowHeight/2-800);
-    bob2 = new Pendulum(windowWidth/2-270,windowHeight/2-800);
-    bob3 = new Pendulum(windowWidth/2-360,windowHeight/2-800);
-    bob4 = new Pendulum(windowWidth/2-450,windowHeight/2-800);
-    bob5 = new Pendulum(windowWidth/2-540,windowHeight/2-800);
+    bob1 = new Pendulum(windowWidth/2-190,windowHeight/2-600);
+    bob2 = new Pendulum(windowWidth/2-270,windowHeight/2-600);
+    bob3 = new Pendulum(windowWidth/2-360,windowHeight/2-600);
+    bob4 = new Pendulum(windowWidth/2-450,windowHeight/2-600);
+    bob5 = new Pendulum(windowWidth/2-540,windowHeight/2-600);
 
     sling1 = new Sling(bob1.body,{x:windowWidth/2-640, y: windowHeight/2-500});
     sling2 = new Sling(bob2.body,{x:windowWidth/2-730, y: windowHeight/2-500});
